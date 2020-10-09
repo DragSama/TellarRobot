@@ -28,7 +28,7 @@ class Manager:
             self.jobs[bot] = self.scheduler.add_job(
                              handler,
                             'interval',
-                             seconds = 5,
+                             seconds = 60,
                              name = username,
                              kwargs = {
                                 'client': client,
